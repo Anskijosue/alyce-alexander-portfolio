@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alyce Alexander | Journalist &middot; Photographer &middot; Editor</title>
+  <meta name="description" content="Portfolio of Alyce Alexander — journalist, photographer, and editor based in Seattle, Washington.">
+
+  <!-- Fonts: Cormorant Garamond (elegant serif) + Syne (modern display) + Inter (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ========== PAGE LOADER ========== -->
+  <div class="loader" id="loader">
+    <div class="loader__inner">
+      <span class="loader__letter">A</span>
+      <span class="loader__letter">L</span>
+      <span class="loader__letter">Y</span>
+      <span class="loader__letter">C</span>
+      <span class="loader__letter">E</span>
+    </div>
+    <div class="loader__bar"></div>
+  </div>
+
+  <!-- ========== CUSTOM CURSOR ========== -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__logo">
+        <span class="nav__logo-text">Alyce</span>
+        <span class="nav__logo-dot"></span>
+      </a>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#hero" class="nav__link" data-text="Home">Home</a></li>
+        <li><a href="#about" class="nav__link" data-text="About">About</a></li>
+        <li><a href="#works" class="nav__link" data-text="Works">Works</a></li>
+        <li><a href="#photography" class="nav__link" data-text="Photography">Photography</a></li>
+        <li><a href="#resume" class="nav__link" data-text="R&eacute;sum&eacute;">R&eacute;sum&eacute;</a></li>
+        <li><a href="#contact" class="nav__link" data-text="Contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <div class="hero__bg-gradient"></div>
+    <div class="hero__content-wrapper">
+      <div class="hero__image" data-parallax="0.15">
+        <!-- Replace src with your headshot -->
+        <div class="hero__image-frame">
+          <img src="assets/images/hero-headshot.jpg"
+               alt="Headshot of Alyce Alexander"
+               class="hero__img">
+          <div class="hero__image-overlay"></div>
+        </div>
+        <div class="hero__image-accent"></div>
+      </div>
+      <div class="hero__content">
+        <div class="hero__label reveal-slide">
+          <span class="hero__label-line"></span>
+          <span>Portfolio &mdash; 2024</span>
+        </div>
+        <h1 class="hero__name">
+          <span class="hero__name-line split-text" data-delay="0">Alyce</span>
+          <span class="hero__name-line split-text" data-delay="1">Alexander</span>
+        </h1>
+        <div class="hero__title-wrapper">
+          <p class="hero__title reveal-slide">Journalist</p>
+          <span class="hero__title-sep reveal-slide">&middot;</span>
+          <p class="hero__title reveal-slide">Photographer</p>
+          <span class="hero__title-sep reveal-slide">&middot;</span>
+          <p class="hero__title reveal-slide">Editor</p>
+        </div>
+        <p class="hero__intro reveal">
+          Creating a better understanding of the world &mdash; through the stories that matter most, the images that move us, and the voices that deserve to be heard.
+        </p>
+        <div class="hero__actions reveal">
+          <a href="#works" class="btn btn--primary">
+            <span>Explore My Work</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+          </a>
+          <a href="#contact" class="btn btn--ghost">Get in Touch</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero__scroll-indicator">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ========== MARQUEE ========== -->
+  <div class="marquee">
+    <div class="marquee__track">
+      <span>Journalist</span><span class="marquee__dot">&diams;</span>
+      <span>Photographer</span><span class="marquee__dot">&diams;</span>
+      <span>Editor</span><span class="marquee__dot">&diams;</span>
+      <span>Storyteller</span><span class="marquee__dot">&diams;</span>
+      <span>Journalist</span><span class="marquee__dot">&diams;</span>
+      <span>Photographer</span><span class="marquee__dot">&diams;</span>
+      <span>Editor</span><span class="marquee__dot">&diams;</span>
+      <span>Storyteller</span><span class="marquee__dot">&diams;</span>
+      <span>Journalist</span><span class="marquee__dot">&diams;</span>
+      <span>Photographer</span><span class="marquee__dot">&diams;</span>
+      <span>Editor</span><span class="marquee__dot">&diams;</span>
+      <span>Storyteller</span><span class="marquee__dot">&diams;</span>
+    </div>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="about" id="about">
+    <div class="about__container">
+      <div class="about__image-col reveal">
+        <div class="about__image-wrapper">
+          <img src="assets/images/cameraandjournalism.jpg"
+               alt="Camera and journalism equipment" class="about__img">
+          <div class="about__image-border"></div>
+        </div>
+      </div>
+      <div class="about__text-col">
+        <span class="section-label reveal-slide">About Me</span>
+        <h2 class="section-title reveal">
+          Get to<br><em>Know Me</em>
+        </h2>
+        <p class="about__text reveal">
+          Greetings! I am Alyce Alexander, a graduate of Florida Agricultural and Mechanical University's School of Journalism and Graphic Communications. I am fueled by an unwavering commitment to uncovering the stories that matter most.
+        </p>
+        <p class="about__text reveal">
+          With a keen eye for detail and a passion for storytelling, I am driven to shine a light on the untold narratives that shape our world. Armed with a pen, a camera, and a determination to seek truth, I am ready to embark on a journey of discovery, to challenge perceptions, and to amplify voices that deserve to be heard.
+        </p>
+        <div class="about__stats reveal">
+          <div class="about__stat">
+            <span class="about__stat-num" data-count="15">0</span><span class="about__stat-plus">+</span>
+            <span class="about__stat-label">Published Articles</span>
+          </div>
+          <div class="about__stat">
+            <span class="about__stat-num" data-count="3">0</span>
+            <span class="about__stat-label">Publications</span>
+          </div>
+          <div class="about__stat">
+            <span class="about__stat-num" data-count="150">0</span><span class="about__stat-plus">+</span>
+            <span class="about__stat-label">Hours Philanthropy</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PUBLISHED WORKS ========== -->
+  <section class="works" id="works">
+    <div class="works__header">
+      <span class="section-label reveal-slide">Featured Articles</span>
+      <h2 class="section-title reveal">Published <em>Works</em></h2>
+      <p class="section-subtitle reveal">Explore articles by clicking the cards below.</p>
+    </div>
+    <div class="works__carousel" id="worksCarousel">
+      <div class="works__track">
+
+        <a href="https://www.thefamuanonline.com/2022/10/20/shelters-are-home-for-dogs-in-search-of-a-family/" target="_blank" rel="noopener" class="works__card reveal" data-tilt>
+          <div class="works__card-image">
+            <img src="assets/images/shelter-dog.jpg" alt="Shelter dog" loading="lazy">
+          </div>
+          <div class="works__card-body">
+            <time class="works__card-date">October 20, 2022</time>
+            <h3 class="works__card-title">National Adopt a Shelter Dog Month</h3>
+            <span class="works__card-source">The FAMUAN</span>
+            <span class="works__card-arrow">&rarr;</span>
+          </div>
+        </a>
+
+        <a href="https://www.thefamuanonline.com/2022/12/04/no-cram-jam-this-semester/" target="_blank" rel="noopener" class="works__card reveal" data-tilt>
+          <div class="works__card-image">
+            <img src="assets/images/cram-jam.jpg" alt="Cram Jam event flyer" loading="lazy">
+          </div>
+          <div class="works__card-body">
+            <time class="works__card-date">December 4, 2022</time>
+            <h3 class="works__card-title">No Cram JAM</h3>
+            <span class="works__card-source">The FAMUAN</span>
+            <span class="works__card-arrow">&rarr;</span>
+          </div>
+        </a>
+
+        <a href="https://www.thefamuanonline.com/2022/11/10/rattigan-keeps-fighting-the-good-fight/" target="_blank" rel="noopener" class="works__card reveal" data-tilt>
+          <div class="works__card-image">
+            <img src="assets/images/rattigan.jpg" alt="Marie Rattigan campaigning" loading="lazy">
+          </div>
+          <div class="works__card-body">
+            <time class="works__card-date">November 10, 2022</time>
+            <h3 class="works__card-title">Rattigan Keeps Fighting the Good Fight</h3>
+            <span class="works__card-source">The FAMUAN</span>
+            <span class="works__card-arrow">&rarr;</span>
+          </div>
+        </a>
+
+        <a href="https://www.thefamuanonline.com/2023/02/11/fhsaa-backtracks-removes-menstrual-history-question/" target="_blank" rel="noopener" class="works__card reveal" data-tilt>
+          <div class="works__card-image">
+            <img src="assets/images/fhsaa.jpg" alt="Florida High School Athletic Association" loading="lazy">
+          </div>
+          <div class="works__card-body">
+            <time class="works__card-date">February 11, 2023</time>
+            <h3 class="works__card-title">FHSAA Backtracks, Removes Menstrual History Question</h3>
+            <span class="works__card-source">The FAMUAN</span>
+            <span class="works__card-arrow">&rarr;</span>
+          </div>
+        </a>
+
+        <a href="https://www.thefamuanonline.com/2023/03/07/cdc-3-in-5-girls-coping-with-despair/" target="_blank" rel="noopener" class="works__card reveal" data-tilt>
+          <div class="works__card-image">
+            <img src="assets/images/cdc-girls.jpg" alt="Young woman by rainy window" loading="lazy">
+          </div>
+          <div class="works__card-body">
+            <time class="works__card-date">March 7, 2023</time>
+            <h3 class="works__card-title">CDC: 3 in 5 Girls Coping with Despair</h3>
+            <span class="works__card-source">The FAMUAN</span>
+            <span class="works__card-arrow">&rarr;</span>
+          </div>
+        </a>
+
+        <a href="https://www.thefamuanonline.com/2022/11/29/giving-tuesday-takes-center-stage/" target="_blank" rel="noopener" class="works__card reveal" data-tilt>
+          <div class="works__card-image">
+            <img src="assets/images/giving-tuesday.jpg" alt="Giving Tuesday" loading="lazy">
+          </div>
+          <div class="works__card-body">
+            <time class="works__card-date">November 29, 2022</time>
+            <h3 class="works__card-title">Giving Tuesday Takes Center Stage</h3>
+            <span class="works__card-source">The FAMUAN</span>
+            <span class="works__card-arrow">&rarr;</span>
+          </div>
+        </a>
+
+      </div>
+      <div class="works__carousel-controls">
+        <button class="works__carousel-btn works__carousel-btn--prev" aria-label="Previous">&larr;</button>
+        <div class="works__carousel-progress">
+          <div class="works__carousel-progress-bar" id="carouselProgress"></div>
+        </div>
+        <button class="works__carousel-btn works__carousel-btn--next" aria-label="Next">&rarr;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EDITOR'S CHOICE — Paparazzi Style ========== -->
+  <section class="editors" id="editors">
+    <div class="editors__spotlight" id="editorsSpotlight"></div>
+    <div class="editors__grain"></div>
+    <div class="editors__header">
+      <span class="section-label reveal-slide">Highlights</span>
+      <h2 class="editors__title reveal">
+        <span class="editors__title-line">Editor's</span>
+        <span class="editors__title-line editors__title-line--accent">Choice</span>
+      </h2>
+      <p class="section-subtitle reveal">
+        From heartwarming conversations to Hollywood's call-to-action &mdash; Alexander is most known for these stories.
+      </p>
+    </div>
+    <div class="editors__stage">
+
+      <a href="https://royalteemagazine.com/proud-family-louder-and-prouder-creators-discuss-evolution-of-the-show-and-its-characters/" target="_blank" rel="noopener" class="editors__card editors__card--1 flash-reveal" data-flash-delay="0">
+        <div class="editors__card-inner">
+          <div class="editors__card-flash-overlay"></div>
+          <img src="assets/images/proudfamily.jpg" alt="The Proud Family Returns" loading="lazy">
+          <div class="editors__card-caption">
+            <span class="editors__card-tag">Royaltee Magazine</span>
+            <h3>The Proud Family Returns</h3>
+            <time>February 2, 2023</time>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://www.calameo.com/family-times-magazine/read/000903156f73278af5d55" target="_blank" rel="noopener" class="editors__card editors__card--2 flash-reveal" data-flash-delay="1">
+        <div class="editors__card-inner">
+          <div class="editors__card-flash-overlay"></div>
+          <img src="assets/images/seniorresourceofocala.jpg" alt="Strong Seniors Need a Strong Foundation" loading="lazy">
+          <div class="editors__card-caption">
+            <span class="editors__card-tag">Family Times Magazine</span>
+            <h3>Strong Seniors Need a Strong Foundation</h3>
+            <time>September 5, 2021</time>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://royalteemagazine.com/come-on-barbie-lets-go-party-the-barbie-movie-is-every-girls-dream/" target="_blank" rel="noopener" class="editors__card editors__card--3 flash-reveal" data-flash-delay="2">
+        <div class="editors__card-inner">
+          <div class="editors__card-flash-overlay"></div>
+          <img src="assets/images/comeonbarbie.jpg" alt="Come on Barbie Let's go Party" loading="lazy">
+          <div class="editors__card-caption">
+            <span class="editors__card-tag">Royaltee Magazine</span>
+            <h3>Come on Barbie, Let's go Party</h3>
+            <time>July 21, 2023</time>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://royalteemagazine.com/ongoing-writers-strike-with-celebrity-support-delays-upcoming-projects/" target="_blank" rel="noopener" class="editors__card editors__card--4 flash-reveal" data-flash-delay="3">
+        <div class="editors__card-inner">
+          <div class="editors__card-flash-overlay"></div>
+          <img src="assets/images/writersstrike.jpg" alt="Writers Strike Delays Projects" loading="lazy">
+          <div class="editors__card-caption">
+            <span class="editors__card-tag">Royaltee Magazine</span>
+            <h3>Writers Strike Delays Projects</h3>
+            <time>July 24, 2023</time>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ========== PHOTOGRAPHY ========== -->
+  <section class="photography" id="photography">
+    <div class="photography__header">
+      <span class="section-label reveal-slide">Gallery</span>
+      <h2 class="section-title reveal">Photo<em>graphy</em></h2>
+    </div>
+    <div class="photography__grid">
+      <div class="photography__item reveal" data-index="0">
+        <img src="https://images.unsplash.com/photo-1495616811223-4d98c6e9c869?auto=format&fit=crop&w=600&q=80" alt="Sunset" loading="lazy">
+      </div>
+      <div class="photography__item photography__item--tall reveal" data-index="1">
+        <img src="https://images.unsplash.com/photo-1545671913-b89ac1b4ac10?auto=format&fit=crop&w=600&h=900&q=80" alt="Jellyfish" loading="lazy">
+      </div>
+      <div class="photography__item reveal" data-index="2">
+        <img src="https://images.unsplash.com/photo-1490750967868-88aa4f44baee?auto=format&fit=crop&w=600&q=80" alt="Flowers and roses" loading="lazy">
+      </div>
+      <div class="photography__item reveal" data-index="3">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80" alt="Beach sunset" loading="lazy">
+      </div>
+      <div class="photography__item photography__item--wide reveal" data-index="4">
+        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=900&q=80" alt="Mountain landscape" loading="lazy">
+      </div>
+      <div class="photography__item reveal" data-index="5">
+        <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=600&q=80" alt="Foggy forest" loading="lazy">
+      </div>
+      <div class="photography__item photography__item--tall reveal" data-index="6">
+        <img src="https://images.unsplash.com/photo-1432405972618-c6b0cfba8546?auto=format&fit=crop&w=600&h=900&q=80" alt="Waterfall" loading="lazy">
+      </div>
+      <div class="photography__item reveal" data-index="7">
+        <img src="https://images.unsplash.com/photo-1518882054726-4af63a39c064?auto=format&fit=crop&w=600&q=80" alt="White lilies" loading="lazy">
+      </div>
+      <div class="photography__item reveal" data-index="8">
+        <img src="https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?auto=format&fit=crop&w=600&q=80" alt="Ocean rocks" loading="lazy">
+      </div>
+      <div class="photography__item photography__item--wide reveal" data-index="9">
+        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=80" alt="Mountain range" loading="lazy">
+      </div>
+      <div class="photography__item reveal" data-index="10">
+        <img src="https://images.unsplash.com/photo-1436891620584-47fd0e565afb?auto=format&fit=crop&w=600&q=80" alt="Fireworks" loading="lazy">
+      </div>
+      <div class="photography__item reveal" data-index="11">
+        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=600&q=80" alt="Portrait" loading="lazy">
+      </div>
+    </div>
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+      <button class="lightbox__close" aria-label="Close lightbox">&times;</button>
+      <button class="lightbox__prev" aria-label="Previous photo">&larr;</button>
+      <button class="lightbox__next" aria-label="Next photo">&rarr;</button>
+      <div class="lightbox__content">
+        <img class="lightbox__img" id="lightboxImg" src="" alt="">
+      </div>
+      <div class="lightbox__counter" id="lightboxCounter"></div>
+    </div>
+  </section>
+
+  <!-- ========== RESUME ========== -->
+  <section class="resume" id="resume">
+    <div class="resume__header-section">
+      <span class="section-label reveal-slide">Experience</span>
+      <h2 class="section-title reveal">R&eacute;sum&eacute;</h2>
+    </div>
+    <div class="resume__container">
+
+      <div class="resume__document reveal">
+        <header class="resume__header">
+          <h3 class="resume__name">Alyce Alexander</h3>
+          <p class="resume__contact-line">
+            (352)525-0546 &nbsp;&bull;&nbsp; alycesimone01@gmail.com &nbsp;&bull;&nbsp; Seattle, Washington
+          </p>
+        </header>
+
+        <div class="resume__section">
+          <h4 class="resume__section-title">Education</h4>
+          <div class="resume__entry">
+            <div class="resume__entry-header">
+              <strong>Florida A&amp;M University</strong> &mdash; School of Journalism &amp; Graphic Communication
+              <span class="resume__entry-date">Tallahassee, FL</span>
+            </div>
+            <div class="resume__entry-sub">
+              Bachelor of Science in Broadcast Journalism &nbsp;|&nbsp; Summa Cum Laude
+              <span class="resume__entry-date">May 2024</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="resume__section">
+          <h4 class="resume__section-title">Professional Experience</h4>
+
+          <div class="resume__entry">
+            <div class="resume__entry-header">
+              <strong>Massage Envy</strong> &mdash; <em>Front Desk Sales Associate</em> &nbsp;|&nbsp; Ocala, FL
+              <span class="resume__entry-date">Sep 2024 &ndash; Present</span>
+            </div>
+            <ul class="resume__list">
+              <li>Educated clients on new and expanded wellness services</li>
+              <li>Sold memberships and retail items based on clients' interests</li>
+              <li>Supported clinic flow by greeting guests, answering calls and emails, and scheduling appointments</li>
+            </ul>
+          </div>
+
+          <div class="resume__entry">
+            <div class="resume__entry-header">
+              <strong>Royaltee Magazine</strong> &mdash; <em>Journalism Intern</em> &nbsp;|&nbsp; Remote
+              <span class="resume__entry-date">Jun 2023 &ndash; Aug 2023</span>
+            </div>
+            <ul class="resume__list">
+              <li>Wrote articles weekly and acquired three published bylines</li>
+              <li>Attended multiple panel discussions and press junkets with creators</li>
+              <li>Followed trending topics and breaking news for assignment pitches</li>
+            </ul>
+          </div>
+
+          <div class="resume__entry">
+            <div class="resume__entry-header">
+              <strong>Greenthumb Revenue LLC</strong> &mdash; <em>Communications Intern</em> &nbsp;|&nbsp; Ocala, FL
+              <span class="resume__entry-date">Jun 2020 &ndash; Aug 2022</span>
+            </div>
+            <ul class="resume__list">
+              <li>Collaborated with management to organize clientele</li>
+              <li>Facilitated daily phone calls with consulting agencies</li>
+              <li>Trained to use multiple streams of communication and applications</li>
+            </ul>
+          </div>
+
+          <div class="resume__entry">
+            <div class="resume__entry-header">
+              <strong>Family Times Magazine</strong> &mdash; <em>Contributor</em> &nbsp;|&nbsp; Ocala, FL
+              <span class="resume__entry-date">Jul 2021 &ndash; Nov 2021</span>
+            </div>
+            <ul class="resume__list">
+              <li>Published a two page article for the magazine</li>
+              <li>Learned how to conduct better interviews, edit and write in a timely manner</li>
+              <li>Researched community concerns to broadcast and unveil pressing issues</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="resume__section">
+          <h4 class="resume__section-title">Leadership &amp; Professional Development</h4>
+
+          <div class="resume__entry">
+            <div class="resume__entry-header">
+              <strong>National Association of Black Journalists</strong> &mdash; <em>Member</em>
+              <span class="resume__entry-date">Oct 2022 &ndash; Present</span>
+            </div>
+            <ul class="resume__list">
+              <li>Met with other media students to engage in professional advancements</li>
+              <li>Fostered strong connections in the journalism field</li>
+              <li>Learned multimedia skills and techniques to apply in the workplace</li>
+            </ul>
+          </div>
+
+          <div class="resume__entry">
+            <div class="resume__entry-header">
+              <strong>Alpha Kappa Alpha Sorority, Inc.</strong> &mdash; <em>Vice President / General Member</em>
+              <span class="resume__entry-date">Apr 2022 &ndash; Present</span>
+            </div>
+            <ul class="resume__list">
+              <li>Facilitated meetings and delegated tasks amongst the chapter committees</li>
+              <li>Collaborated with members to create campus programs for students</li>
+              <li>Served the Tallahassee community with over 150 hours of philanthropy</li>
+            </ul>
+          </div>
+
+          <div class="resume__entry">
+            <div class="resume__entry-header">
+              <strong>The FAMUAN</strong> &mdash; <em>Staff Writer</em> &nbsp;|&nbsp; Tallahassee, FL
+              <span class="resume__entry-date">Apr 2022 &ndash; Feb 2023</span>
+            </div>
+            <ul class="resume__list">
+              <li>Pitched feature stories with a 95% publication rate</li>
+              <li>Developed lifestyle and hard news stories for publication</li>
+              <li>Studied Associated Press style techniques</li>
+            </ul>
+          </div>
+
+          <div class="resume__entry">
+            <div class="resume__entry-header">
+              <strong>Student Relations Committee</strong> &mdash; <em>1st Student Senate Liaison</em>
+              <span class="resume__entry-date">Jul 2021 &ndash; May 2022</span>
+            </div>
+            <ul class="resume__list">
+              <li>Produced campus events open to all students and faculty</li>
+              <li>Unified the student government association with the student body</li>
+              <li>Hosted monthly town halls to discuss opportunities on campus</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="resume__section">
+          <h4 class="resume__section-title">Skills</h4>
+          <div class="resume__skills-grid">
+            <span class="resume__skill-tag">AP Style</span>
+            <span class="resume__skill-tag">Broadcasting</span>
+            <span class="resume__skill-tag">News Writing</span>
+            <span class="resume__skill-tag">Magazine Writing</span>
+            <span class="resume__skill-tag">Photography</span>
+            <span class="resume__skill-tag">Digital Media</span>
+            <span class="resume__skill-tag">Editing</span>
+            <span class="resume__skill-tag">Client Relations</span>
+            <span class="resume__skill-tag">Adobe Suite</span>
+            <span class="resume__skill-tag">Microsoft 365</span>
+            <span class="resume__skill-tag">Sales</span>
+          </div>
+        </div>
+      </div>
+
+      <a href="#" class="btn btn--primary resume__download reveal" download>
+        <span>Download PDF</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7,10 12,15 17,10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="contact" id="contact">
+    <div class="contact__inner">
+      <div class="contact__info reveal">
+        <span class="section-label">Say Hello</span>
+        <h2 class="section-title">Let's <em>Connect</em></h2>
+        <p class="contact__desc">I'd love to hear from you. Whether you have a story idea, collaboration opportunity, or just want to say hello.</p>
+        <div class="contact__details">
+          <a href="mailto:alycesimone01@gmail.com" class="contact__detail-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span>alycesimone01@gmail.com</span>
+          </a>
+          <a href="tel:+13525250546" class="contact__detail-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>(352) 525-0546</span>
+          </a>
+          <a href="https://www.instagram.com/alyce.alexander.articles" target="_blank" rel="noopener" class="contact__detail-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            <span>@alyce.alexander.articles</span>
+          </a>
+        </div>
+      </div>
+      <form class="contact__form reveal" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="contact">
+        <p class="hidden"><label>Don't fill this out: <input name="bot-field"></label></p>
+        <div class="contact__form-row">
+          <div class="contact__field">
+            <input type="text" id="name" name="name" placeholder=" " required>
+            <label for="name">Name *</label>
+          </div>
+          <div class="contact__field">
+            <input type="email" id="email" name="email" placeholder=" " required>
+            <label for="email">Email *</label>
+          </div>
+        </div>
+        <div class="contact__form-row">
+          <div class="contact__field">
+            <input type="tel" id="phone" name="phone" placeholder=" ">
+            <label for="phone">Phone</label>
+          </div>
+          <div class="contact__field">
+            <input type="text" id="address" name="address" placeholder=" ">
+            <label for="address">Address</label>
+          </div>
+        </div>
+        <div class="contact__field">
+          <input type="text" id="subject" name="subject" placeholder=" ">
+          <label for="subject">Subject</label>
+        </div>
+        <div class="contact__field">
+          <textarea id="message" name="message" rows="5" placeholder=" "></textarea>
+          <label for="message">Message</label>
+        </div>
+        <button type="submit" class="btn btn--primary contact__submit">
+          <span>Send Message</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        </button>
+      </form>
+    </div>
+    <div class="contact__map reveal">
+      <iframe
+        title="Map of Seattle, Washington"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d172175.97372893856!2d-122.4376!3d47.6062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490102c93e83355%3A0x102565466944d59a!2sSeattle%2C%20WA!5e0!3m2!1sen!2sus!4v1700000000000"
+        width="100%"
+        height="350"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <a href="#hero" class="footer__logo">Alyce Alexander</a>
+      <div class="footer__links">
+        <a href="#about">About</a>
+        <a href="#works">Works</a>
+        <a href="#photography">Photography</a>
+        <a href="#resume">R&eacute;sum&eacute;</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer__social">
+        <a href="https://www.instagram.com/alyce.alexander.articles" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+        <a href="mailto:alycesimone01@gmail.com" aria-label="Email">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a>
+      </div>
+      <p class="footer__copy">&copy; 2026 Alyce Alexander. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
